@@ -1,7 +1,5 @@
 package com.example.demo.services;
 import java.text.DateFormat;
-import java.text.FieldPosition;
-import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -31,7 +29,7 @@ public class Calendar
 
         int h = (q+first+k+second+third-(2*j))%7;
 
-        return h;
+        return h - 1;
     }
 
     public static String weekDay()
