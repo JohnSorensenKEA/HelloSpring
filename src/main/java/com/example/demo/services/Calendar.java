@@ -81,7 +81,7 @@ public class Calendar
 
         if(day.equals("Friday"))
         {
-            return "ITS FUCKING FRIDAY";
+            return "ITS FUCKING FRIDAY!";
         }
         return "Sadly it's "+day;
     }
