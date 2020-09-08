@@ -14,9 +14,9 @@ public class MyFirstController
     @ResponseBody
     public String friday()
     {
-        return Calendar.isItFriday();
+        Calendar cal = new Calendar();
+        return cal.isItFriday();
     }
-
 
     //http://localhost:8080/echo?phraseToEcho=Hello
     @GetMapping("/echo")
@@ -37,7 +37,6 @@ public class MyFirstController
         return result;
     }
 
-
     @GetMapping("/hello")
     @ResponseBody
     public String helloWorld()
@@ -49,7 +48,7 @@ public class MyFirstController
     @ResponseBody
     public String world()
     {
-        return "World3orldvvorldMorld";
+        return "World\n3orld\nvvorld\nMorld";
     }
 
     @GetMapping("/")
