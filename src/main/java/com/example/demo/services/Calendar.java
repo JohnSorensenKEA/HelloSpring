@@ -29,7 +29,9 @@ public class Calendar
 
         int h = (q+first+k+second+third-(2*j))%7;
 
-        return h - 1;
+        int d = ((h + 5)%7) + 1;
+
+        return d;
     }
 
     public static String weekDay()
